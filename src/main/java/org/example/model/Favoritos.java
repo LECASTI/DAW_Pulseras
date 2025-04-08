@@ -1,4 +1,4 @@
-// src/main/java/org/example/model/ListaDeseos.java
+// src/main/java/org/example/model/Favoritos.java
 package org.example.model;
 
 import java.io.Serializable;
