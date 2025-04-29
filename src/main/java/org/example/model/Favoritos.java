@@ -5,35 +5,20 @@ import java.io.Serializable;
 import java.util.List;
 import org.bson.types.ObjectId;
 
+//===== Bean Favoritos =====//
 public class Favoritos implements Serializable {
     private ObjectId id;
-    private ObjectId usuario_id; // Referencia al usuario
-    private List<ObjectId> materiales_ids; // Referencias a la colección 'materiales'
+    private ObjectId usuarioId;    // Obligatorio (solo usuarios registrados)
+    private List<ObjectId> pulserasIds;
 
-    public Favoritos() {
-    }
+    public Favoritos() {}
 
-    public ObjectId getId() {
-        return id;
-    }
-
-    public void setId(ObjectId id) {
-        this.id = id;
-    }
-
-    public ObjectId getUsuario_id() {
-        return usuario_id;
-    }
-
-    public void setUsuario_id(ObjectId usuario_id) {
-        this.usuario_id = usuario_id;
-    }
-
-    public List<ObjectId> getMateriales_ids() {
-        return materiales_ids;
-    }
-
-    public void setMateriales_ids(List<ObjectId> materiales_ids) {
-        this.materiales_ids = materiales_ids;
-    }
+    // Getters y setters
+    public ObjectId getId() { return id; }
+    public void setId(ObjectId id) { this.id = id; }
+    public ObjectId getUsuarioId() { return usuarioId; }
+    public void setUsuarioId(ObjectId usuarioId) { this.usuarioId = usuarioId; }
+    public List<ObjectId> getPulserasIds() { return pulserasIds; }
+    public void setPulserasIds(List<ObjectId> pulserasIds) { this.pulserasIds = pulserasIds; }
 }
+//===== Fin Favoritos =====//
