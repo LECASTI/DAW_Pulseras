@@ -12,6 +12,7 @@ public class Usuario implements Serializable {
     private String correo;
     private String rol; // "admin" o "usuario"
     private ObjectId favoritosId;
+    private ObjectId buildsId;
 
     public Usuario() {}
 
@@ -28,5 +29,7 @@ public class Usuario implements Serializable {
     public void setRol(String rol) { this.rol = rol; }
     public ObjectId getFavoritosId() { return favoritosId; }
     public void setFavoritosId(ObjectId favoritosId) { this.favoritosId = favoritosId; }
+    public ObjectId getBuildsId() { return buildsId; }
+    public void setBuildsId (ObjectId builds) { this.buildsId = builds; }
 }
 //===== Fin Usuario =====//
