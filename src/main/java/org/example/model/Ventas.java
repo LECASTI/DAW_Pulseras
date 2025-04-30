@@ -7,7 +7,7 @@ import org.bson.types.ObjectId;
 //===== Bean Ventas =====//
 public class Ventas implements Serializable {
     private ObjectId id;
-    private ObjectId usuarioId;    // Obligatorio (solo usuarios registrados)
+    private ObjectId usuarioId;    
     private ObjectId pulseraId;
     
     public Ventas() {}
