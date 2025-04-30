@@ -11,7 +11,7 @@ public class Builds implements Serializable {
     private ObjectId usuarioId;    // Obligatorio (solo usuarios registrados)
     private List<ObjectId> pulserasIds;
 
-    public Favoritos() {}
+    public Builds() {}
 
     // Getters y setters
     public ObjectId getId() { return id; }
