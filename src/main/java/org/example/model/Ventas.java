@@ -2,7 +2,6 @@
 package org.example.model;
 
 import java.io.Serializable;
-import java.util.List;
 import org.bson.types.ObjectId;
 
 //===== Bean Ventas =====//
