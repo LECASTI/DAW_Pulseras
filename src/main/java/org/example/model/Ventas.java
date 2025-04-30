@@ -6,10 +6,11 @@ import java.util.List;
 import org.bson.types.ObjectId;
 
 //===== Bean Ventas =====//
-public class Builds implements Serializable {
+public class Ventas implements Serializable {
     private ObjectId id;
     private ObjectId usuarioId;    // Obligatorio (solo usuarios registrados)
     private ObjectId pulseraId;
+    
     public Ventas() {}
 
     // Getters y setters
